@@ -8,25 +8,26 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 <Container>
 	<section class="hero-section__section">
 		<div class="hero-section__text">
-				<h1>Welcome to Odyssey</h1>
+				<h1>Hi, My name is Nicholas</h1>
 				<p>
-					A marketing website theme built with <a
-						href="https://astro.build"
-						target="_blank"
-						rel="noreferrer">Astro</a
-					> and carefully crafted for startups and businesses.
+					and welcome to my personal website! Around here I post all sorts of cool stuff!
 				</p>
 				<div class="hero-btns__container">
-					<Button href="/theme/get-started" customIcon
-						>Get Started
+					<Button href="/blog" customIcon
+						>Blog
             <Fragment slot="icon">
               <Icon name="ic:baseline-chevron-right"/>
             </Fragment>
             </Button
 					>
-					<Button href="/theme/style-guide" unelevated>Style Guide</Button>
+					<Button href="/portfolio" unelevated>Portfolio</Button>
 				</div>
-        {settings.enableThemeSwitcher && <ThemeSwitcher client:only/>}
+        {settings.enableThemeSwitcher && <div>
+			<p class="hero-section__text">
+				Choose a theme to customize your experience
+			</p>
+			<ThemeSwitcher client:only/>
+		</div>}
 		</div>
 		<div class="hero-section__image">
 				<picture>
@@ -57,6 +58,7 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		display: flex;
 		align-items: center;
 		gap: 1rem;
+		margin-bottom: 1rem;
 	}
 	.hero-btns__container {
 		margin-right: 1rem;

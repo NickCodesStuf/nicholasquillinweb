@@ -25,16 +25,16 @@ const themes = [
     icon: earthThemeIcon,
     label: 'Earth',
   },
-  {
-    name: 'ocean',
-    icon: blueThemeIcon,
-    label: 'Ocean',
-  },
-  {
-    name: 'sand',
-    icon: orangeThemeIcon,
-    label: 'Sand',
-  }
+//   {
+//     name: 'ocean',
+//     icon: blueThemeIcon,
+//     label: 'Ocean',
+//   },
+//   {
+//     name: 'sand',
+//     icon: orangeThemeIcon,
+//     label: 'Sand',
+//   }
 ]
 
 @customElement('theme-switcher')
@@ -65,7 +65,7 @@ export class ThemeSwitcher extends LitElement {
 			.theme-switcher__container {
 				margin: 2rem 0;
 				display: grid;
-				grid-template-columns: repeat(5, 1fr);
+				grid-template-columns: repeat(3, 1fr);
 			}
 			.theme-select__container {
 				display: flex;
