@@ -6,6 +6,8 @@ import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
 
+import Warning from '../components/core/Warning.astro';
+
 
 export interface Props {
 	seo?: BaseHeadProps;
@@ -22,6 +24,7 @@ const { seo } = Astro.props as Props;
 			<Logo />
 		</span>
 	</Header>
+	<Warning text="This website is still under construction. More content will be added soon -Nick" />
 	<div id="page">
 		<slot />
 	</div>
